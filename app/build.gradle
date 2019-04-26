@@ -43,8 +43,9 @@ dependencies {
     implementation 'com.android.support:cardview-v7:27.1.0'
     implementation 'com.google.android.gms:play-services-vision:10.2.1'
 
-    implementation 'io.payworks:mpos.android.ui:2.41.1-20190208-8e9f5b2'
-    implementation 'io.payworks:mpos.android.accessories.pax:2.41.1-20190208-8e9f5b2'
+    implementation 'io.payworks:mpos.android.ui:2.42.2-20190403-87c21d8'
+    implementation 'io.payworks:mpos.android.accessories.pax:2.42.2-20190403-87c21d8'
+
 
 
 

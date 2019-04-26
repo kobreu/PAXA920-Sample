@@ -20,10 +20,11 @@ import io.mpos.ui.shared.model.MposUiConfiguration;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static String merchantIdentifier = "1f9a9a56-6347-4e21-81d0-f59a7bcaa0a8";
-    private final static String merchantSecretKey = "r5whofE1sLY9GaiPbl0uzG7oqU0xJ2eU";
+    private final static String merchantIdentifier = "f415cd8f-e44c-43f3-90ad-d7f306e2451c";
+    private final static String merchantSecretKey = "6lUXylBCzWDOyQqiet7tvrpCMN3bJsYt";
 
     private final static ProviderMode mode = ProviderMode.TEST;
+    private final static Currency currency = Currency.USD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             TransactionParameters transactionParameters = new TransactionParameters.Builder()
-                    .charge(new BigDecimal(Payment.getText().toString()), Currency.EUR)
+                    .charge(new BigDecimal(Payment.getText().toString()), Currency.USD)
                     .subject("Bouquet of Flowers")
                     .customIdentifier("yourReferenceForTheTransaction")
                     .build();
